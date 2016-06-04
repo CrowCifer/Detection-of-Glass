@@ -15,6 +15,7 @@ namespace Detection_Of_Glass
         public Wait()
         {
             InitializeComponent();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Show(); 
         }
 

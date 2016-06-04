@@ -17,6 +17,7 @@ namespace Detection_Of_Glass
         {
             InitializeComponent(); 
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Image tmp = Image.FromFile("rustResult.jpg");
             pictureBox1.Image = tmp;
             StreamReader sr = new StreamReader(@"rust.txt", Encoding.Default);
@@ -29,5 +30,9 @@ namespace Detection_Of_Glass
            
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
