@@ -6,30 +6,22 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Text;
 using System.Windows.Forms;
-using System.IO;
+
 namespace Detection_Of_Glass
 {
-    public partial class RustTestResult : Form
+    public partial class BOBO_Result : Form
     {
-        public RustTestResult()
+        public BOBO_Result()
         {
-            InitializeComponent(); 
+            InitializeComponent();
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Image tmp = Image.FromFile("rustResult.jpg");
+            Image tmp = Image.FromFile("Contours.jpg");
             pictureBox1.Image = tmp;
-            StreamReader sr = new StreamReader(@"rust.txt", Encoding.Default);
-            string str;
-            str = sr.ReadLine();
-            sr.Close();
-
-            label1.Text="该玻璃上共有"+str+"块铁锈" ;
-            this.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void BOBO_Result_Load(object sender, EventArgs e)
         {
 
         }

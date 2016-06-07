@@ -30,5 +30,11 @@ namespace Detection_Of_Glass
             RustTest rt = new RustTest();
             rt.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            BOBO bb = new BOBO();
+            bb.Show();
+        }
     }
 }
