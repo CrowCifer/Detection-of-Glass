@@ -36,5 +36,10 @@ namespace Detection_Of_Glass
             BOBO bb = new BOBO();
             bb.Show();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
